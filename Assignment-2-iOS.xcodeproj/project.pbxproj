@@ -16,6 +16,7 @@
 		B5C32C652CB84B97005D0E8E /* Assignment_2_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C642CB84B97005D0E8E /* Assignment_2_iOSTests.swift */; };
 		B5C32C6F2CB84B97005D0E8E /* Assignment_2_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C6E2CB84B97005D0E8E /* Assignment_2_iOSUITests.swift */; };
 		B5C32C712CB84B97005D0E8E /* Assignment_2_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C702CB84B97005D0E8E /* Assignment_2_iOSUITestsLaunchTests.swift */; };
+		B5C32C822CB8674D005D0E8E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C812CB8674D005D0E8E /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B5C32C6A2CB84B97005D0E8E /* Assignment-2-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment-2-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C32C6E2CB84B97005D0E8E /* Assignment_2_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_2_iOSUITests.swift; sourceTree = "<group>"; };
 		B5C32C702CB84B97005D0E8E /* Assignment_2_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_2_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5C32C812CB8674D005D0E8E /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B5C32C4F2CB84B95005D0E8E /* SceneDelegate.swift */,
 				B5C32C512CB84B95005D0E8E /* ViewController.swift */,
 				B5C32C532CB84B95005D0E8E /* Main.storyboard */,
+				B5C32C812CB8674D005D0E8E /* ItemModel.swift */,
 				B5C32C562CB84B97005D0E8E /* Assets.xcassets */,
 				B5C32C582CB84B97005D0E8E /* LaunchScreen.storyboard */,
 				B5C32C5B2CB84B97005D0E8E /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				B5C32C522CB84B95005D0E8E /* ViewController.swift in Sources */,
 				B5C32C4E2CB84B95005D0E8E /* AppDelegate.swift in Sources */,
+				B5C32C822CB8674D005D0E8E /* ItemModel.swift in Sources */,
 				B5C32C502CB84B95005D0E8E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

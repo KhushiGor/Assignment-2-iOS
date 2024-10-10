@@ -35,6 +35,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Buy"/>
+                                <connections>
+                                    <action selector="buyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8H8-IV-5N7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-C4-LM5">
                                 <rect key="frame" x="31" y="211" width="58" height="55"/>
@@ -46,7 +49,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="oneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gV-mc-4rt"/>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6nC-l3-2B1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-cR-y09">
@@ -58,6 +61,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oJ-hV-zr2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xo-OJ-ulu">
                                 <rect key="frame" x="97" y="211" width="60" height="55"/>
@@ -69,7 +75,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="twoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcp-ew-h4h"/>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSL-qL-iap"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFj-c8-hIk">
@@ -81,6 +87,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5q-g8-NsA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tia-Pb-cp0">
                                 <rect key="frame" x="165" y="274" width="56" height="59"/>
@@ -91,6 +100,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5c-Zf-3hd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJG-Di-15g">
                                 <rect key="frame" x="97" y="273" width="60" height="59"/>
@@ -101,6 +113,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPK-dE-c2Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsX-Sm-AFW">
                                 <rect key="frame" x="32" y="338" width="58" height="59"/>
@@ -111,6 +126,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvP-zg-e4L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a7-hD-VfX">
                                 <rect key="frame" x="166" y="339" width="56" height="59"/>
@@ -121,6 +139,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZU-Y9-TKw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRX-9p-Gcb">
                                 <rect key="frame" x="98" y="338" width="60" height="59"/>
@@ -131,6 +152,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBb-bt-1vQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeM-hK-seh">
                                 <rect key="frame" x="99" y="405" width="58" height="59"/>
@@ -141,6 +165,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="digitButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npW-dI-kxy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXe-B9-ISi">
                                 <rect key="frame" x="31" y="108" width="126" height="61"/>
@@ -177,6 +204,7 @@
                     </view>
                     <connections>
                         <outlet property="Quantity" destination="WNg-S8-fWs" id="KxV-I1-pby"/>
+                        <outlet property="itemTable" destination="9Eo-Fz-UP2" id="h3Q-b8-AUy"/>
                         <outlet property="itemType" destination="dXe-B9-ISi" id="Lj5-bI-DK6"/>
                         <outlet property="total" destination="hGZ-wj-Tea" id="IdO-z5-zwi"/>
                     </connections>
@@ -191,10 +219,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
