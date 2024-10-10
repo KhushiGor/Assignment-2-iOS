@@ -68,6 +68,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="twoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcp-ew-h4h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFj-c8-hIk">
                                 <rect key="frame" x="31" y="273" width="58" height="59"/>
@@ -174,7 +177,7 @@
                     </view>
                     <connections>
                         <outlet property="Quantity" destination="WNg-S8-fWs" id="KxV-I1-pby"/>
-                        <outlet property="itemType" destination="dXe-B9-ISi" id="cLh-rk-MWe"/>
+                        <outlet property="itemType" destination="dXe-B9-ISi" id="Lj5-bI-DK6"/>
                         <outlet property="total" destination="hGZ-wj-Tea" id="IdO-z5-zwi"/>
                     </connections>
                 </viewController>
