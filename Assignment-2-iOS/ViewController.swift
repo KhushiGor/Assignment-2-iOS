@@ -27,6 +27,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var selectedItemIndex = 0
    
+    
+    
     @IBOutlet weak var itemType: UILabel!
     
     @IBOutlet weak var total: UILabel!
@@ -50,6 +52,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 Quantity.text = "\(quantity)"
             }
         }
+    @IBAction func clearButton(_ sender: UIButton) {
+        quantity = 0
+        Quantity.text = "\(quantity)"
+        total.text = ""
+        itemType.text = "Type"
+    }
     
     func alert(alertMessage: String){
         let alert = UIAlertController(title: "\(alertMessage)", message: "", preferredStyle: .alert)
@@ -69,9 +77,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 items[selectedItemIndex].quantity -= quantityToBuy!
                 itemTable.reloadData()
                 let totalPrice : Double = Double(quantityToBuy!) * price
-                Quantity.text = ""
-                total.text = "\(totalPrice)"
-                itemType.text = ""
+                quantity = 0
+                Quantity.text = "\(quantity)"
+                total.text = String(format: "%.2f", totalPrice)
+                itemType.text = "\(items[selectedItemIndex].name)"
+               
             }
         }
     }
@@ -88,15 +98,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ??
                        UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
             let productInCell = items[indexPath.row];
-            cell.textLabel?.text="\(productInCell.name)"
+        cell.textLabel?.text="\(productInCell.name) - Quantity \(productInCell.quantity) - Price \(productInCell.price)"
             cell.detailTextLabel?.text = "\(productInCell.quantity)"
             return cell
     }
     
-    func itemTable(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            
            let product = items[indexPath.row]
-           quantity = product.quantity;
+           quantity = 0;
            price = product.price;
            selectedItemIndex = indexPath.row
            itemType.text = "\(product.name)";
@@ -115,7 +125,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         itemTable.dataSource = self
         itemTable.delegate = self
-        
     }
     
 
