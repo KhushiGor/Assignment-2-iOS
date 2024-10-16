@@ -23,7 +23,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
               let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return allItems
           }
-    
+    struct PurchaseHistoryItem {
+        let itemName: String
+        let quantity: Int
+        let date: Date
+        let totalAmount: Double
+    }
+    var purchaseHistory: [PurchaseHistoryItem] = []
+
 
     var selectedItemIndex = 0
    
@@ -77,6 +84,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 items[selectedItemIndex].quantity -= quantityToBuy!
                 itemTable.reloadData()
                 let totalPrice : Double = Double(quantityToBuy!) * price
+                let purchase = PurchaseHistoryItem(itemName: itemType.text ?? "Unknown",
+                                                      quantity: quantityToBuy!,
+                                                      date: Date(),
+                                                      totalAmount: totalPrice)
+
+
+                purchaseHistory.append(purchase)
                 quantity = 0
                 Quantity.text = "\(quantity)"
                 total.text = String(format: "%.2f", totalPrice)
