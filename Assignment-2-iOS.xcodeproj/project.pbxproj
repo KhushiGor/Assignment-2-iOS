@@ -10,6 +10,7 @@
 		B500C08D2CC03DFB0004E73C /* ManagerOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500C08C2CC03DFB0004E73C /* ManagerOptionsViewController.swift */; };
 		B500C0992CC049E60004E73C /* HistoryItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500C0982CC049E60004E73C /* HistoryItemsTableViewController.swift */; };
 		B500C09B2CC04B770004E73C /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500C09A2CC04B770004E73C /* ItemsModel.swift */; };
+		B52DFF392CC1C777002B4FC5 /* RestockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52DFF382CC1C776002B4FC5 /* RestockViewController.swift */; };
 		B5C32C4E2CB84B95005D0E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C4D2CB84B95005D0E8E /* AppDelegate.swift */; };
 		B5C32C502CB84B95005D0E8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C4F2CB84B95005D0E8E /* SceneDelegate.swift */; };
 		B5C32C522CB84B95005D0E8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C32C512CB84B95005D0E8E /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		B500C08C2CC03DFB0004E73C /* ManagerOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerOptionsViewController.swift; sourceTree = "<group>"; };
 		B500C0982CC049E60004E73C /* HistoryItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItemsTableViewController.swift; sourceTree = "<group>"; };
 		B500C09A2CC04B770004E73C /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
+		B52DFF382CC1C776002B4FC5 /* RestockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestockViewController.swift; sourceTree = "<group>"; };
 		B5C32C4A2CB84B95005D0E8E /* Assignment-2-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment-2-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C32C4D2CB84B95005D0E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C32C4F2CB84B95005D0E8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				B500C08C2CC03DFB0004E73C /* ManagerOptionsViewController.swift */,
 				B500C0982CC049E60004E73C /* HistoryItemsTableViewController.swift */,
 				B500C09A2CC04B770004E73C /* ItemsModel.swift */,
+				B52DFF382CC1C776002B4FC5 /* RestockViewController.swift */,
 			);
 			path = "Assignment-2-iOS";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52DFF392CC1C777002B4FC5 /* RestockViewController.swift in Sources */,
 				B5C32C522CB84B95005D0E8E /* ViewController.swift in Sources */,
 				B500C08D2CC03DFB0004E73C /* ManagerOptionsViewController.swift in Sources */,
 				B5C32C4E2CB84B95005D0E8E /* AppDelegate.swift in Sources */,

@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let date: Date
         let totalAmount: Double
     }
+
     var purchaseHistory: [PurchaseHistoryItem] = []
 
 
@@ -75,20 +76,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if itemType.text == "Type"{alert(alertMessage: "Please Select Product")}
         else{
             let quantityToBuy = Int (Quantity.text!)
-            if quantityToBuy! > quantity{
+            if quantityToBuy! > items[selectedItemIndex].quantity {
                 alert(alertMessage: "Invalid Quantity")
-            
             }
             else{
 //                let quantityToSubtract = Int(Quantity.text!)
                 items[selectedItemIndex].quantity -= quantityToBuy!
                 itemTable.reloadData()
                 let totalPrice : Double = Double(quantityToBuy!) * price
-                let purchase = PurchaseHistoryItem(itemName: itemType.text ?? "Unknown",
-                                                      quantity: quantityToBuy!,
-                                                      date: Date(),
-                                                      totalAmount: totalPrice)
-
+                
+                let purchase = PurchaseHistoryItem(
+                                itemName: itemType.text ?? "Unknown",
+                                quantity: quantityToBuy!,
+                                date: Date(),
+                                totalAmount: totalPrice
+                            )
 
                 purchaseHistory.append(purchase)
                 quantity = 0
@@ -129,7 +131,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
            
            }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showHistory" {
+            if let historyVC = segue.destination as? HistoryItemsTableViewController {
+                // Pass the purchase history to the history view controller
+                historyVC.purchaseHistory = self.purchaseHistory
+            }
+        }
+    }
+
     
     
     
