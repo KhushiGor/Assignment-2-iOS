@@ -256,7 +256,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="History"/>
                                 <connections>
-                                    <segue destination="y5G-S3-d45" kind="show" identifier="showHistory" id="uYH-TG-mgq"/>
+                                    <action selector="HistoryButton:" destination="EjV-IV-JaV" eventType="touchUpInside" id="T9n-Oq-Vps"/>
+                                    <segue destination="y5G-S3-d45" kind="show" identifier="showHistory" id="fbP-E1-afq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myx-6u-6sN">
@@ -273,9 +274,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="8W9-R1-Bke"/>
-                    <connections>
-                        <outlet property="backButton" destination="8W9-R1-Bke" id="yuQ-F8-WRi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzW-ff-ree" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,6 +298,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Restock"/>
+                                <connections>
+                                    <action selector="restockButton:" destination="mSs-ra-QNO" eventType="touchUpInside" id="gbg-B8-iTB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBU-zR-Yvg">
                                 <rect key="frame" x="208" y="297" width="77" height="35"/>
@@ -343,6 +344,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z4g-Bo-si2"/>
+                    <connections>
+                        <outlet property="restockTextField" destination="Ed3-SA-Khi" id="PLh-FW-9Lc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyH-IN-2VS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

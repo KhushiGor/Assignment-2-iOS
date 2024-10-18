@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B500C08D2CC03DFB0004E73C /* ManagerOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500C08C2CC03DFB0004E73C /* ManagerOptionsViewController.swift */; };
 		B500C0992CC049E60004E73C /* HistoryItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500C0982CC049E60004E73C /* HistoryItemsTableViewController.swift */; };
 		B500C09B2CC04B770004E73C /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500C09A2CC04B770004E73C /* ItemsModel.swift */; };
 		B52DFF392CC1C777002B4FC5 /* RestockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52DFF382CC1C776002B4FC5 /* RestockViewController.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B500C08C2CC03DFB0004E73C /* ManagerOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerOptionsViewController.swift; sourceTree = "<group>"; };
 		B500C0982CC049E60004E73C /* HistoryItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItemsTableViewController.swift; sourceTree = "<group>"; };
 		B500C09A2CC04B770004E73C /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
 		B52DFF382CC1C776002B4FC5 /* RestockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestockViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				B5C32C562CB84B97005D0E8E /* Assets.xcassets */,
 				B5C32C582CB84B97005D0E8E /* LaunchScreen.storyboard */,
 				B5C32C5B2CB84B97005D0E8E /* Info.plist */,
-				B500C08C2CC03DFB0004E73C /* ManagerOptionsViewController.swift */,
 				B500C0982CC049E60004E73C /* HistoryItemsTableViewController.swift */,
 				B500C09A2CC04B770004E73C /* ItemsModel.swift */,
 				B52DFF382CC1C776002B4FC5 /* RestockViewController.swift */,
@@ -275,7 +272,6 @@
 			files = (
 				B52DFF392CC1C777002B4FC5 /* RestockViewController.swift in Sources */,
 				B5C32C522CB84B95005D0E8E /* ViewController.swift in Sources */,
-				B500C08D2CC03DFB0004E73C /* ManagerOptionsViewController.swift in Sources */,
 				B5C32C4E2CB84B95005D0E8E /* AppDelegate.swift in Sources */,
 				B500C09B2CC04B770004E73C /* ItemsModel.swift in Sources */,
 				B500C0992CC049E60004E73C /* HistoryItemsTableViewController.swift in Sources */,

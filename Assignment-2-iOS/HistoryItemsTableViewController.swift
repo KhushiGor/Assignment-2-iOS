@@ -9,7 +9,7 @@ import UIKit
 
 class HistoryItemsTableViewController: UITableViewController {
 
-    
+    var purchaseManager = UIApplication.shared.delegate as! AppDelegate
     var purchaseHistory: [ViewController.PurchaseHistoryItem] = []
 
     override func viewDidLoad() {
@@ -21,13 +21,13 @@ class HistoryItemsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showHistory" {
-            if let historyVC = segue.destination as? HistoryItemsTableViewController {
-                historyVC.purchaseHistory = purchaseHistory
-            }
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showHistory" {
+//            if let historyVC = segue.destination as? HistoryItemsTableViewController {
+//                historyVC.purchaseHistory = purchaseHistory
+//            }
+//        }
+//    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

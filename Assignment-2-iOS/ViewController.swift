@@ -9,33 +9,34 @@ import UIKit
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    var purchaseManager = UIApplication.shared.delegate as! AppDelegate
     var quantity = 0
     var price : Double = 0.0
-    var allItems: [ItemModel] = [
-        ItemModel(name: "Pants", quantity: 20, price: 40.80),
-        ItemModel(name: "Shoes", quantity: 50, price: 70.90),
-        ItemModel(name: "Hats", quantity: 10, price: 10.56),
-        ItemModel(name: "T-shirts", quantity: 10, price: 30.78),
-        ItemModel(name: "Dresses", quantity: 24, price: 60.00)
+    var allItems: [Item] = [
+        Item(name: "Pants", quantity: 20, price: 40.80),
+        Item(name: "Shoes", quantity: 50, price: 70.90),
+        Item(name: "Hats", quantity: 10, price: 10.56),
+        Item(name: "T-shirts", quantity: 10, price: 30.78),
+        Item(name: "Dresses", quantity: 24, price: 60.00)
         ]
-    var items: [ItemModel] {
-              let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var items: [Item] {
         return allItems
-          }
-    struct PurchaseHistoryItem {
-        let itemName: String
-        let quantity: Int
-        let date: Date
-        let totalAmount: Double
     }
+
+        
+        struct PurchaseHistoryItem {
+            let itemName: String
+            let quantity: Int
+            let date: Date
+            let totalAmount: Double
+        }
 
     var purchaseHistory: [PurchaseHistoryItem] = []
 
 
     var selectedItemIndex = 0
    
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var itemType: UILabel!
     
@@ -92,7 +93,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 totalAmount: totalPrice
                             )
 
-                purchaseHistory.append(purchase)
+                
+//                PurchaseHistoryItem.append(purchase)
+
                 quantity = 0
                 Quantity.text = "\(quantity)"
                 total.text = String(format: "%.2f", totalPrice)
@@ -131,14 +134,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
            
            }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showHistory" {
-            if let historyVC = segue.destination as? HistoryItemsTableViewController {
-                // Pass the purchase history to the history view controller
-                historyVC.purchaseHistory = self.purchaseHistory
-            }
-        }
-    }
 
     
     
