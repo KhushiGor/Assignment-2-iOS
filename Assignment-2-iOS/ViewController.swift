@@ -9,7 +9,6 @@ import UIKit
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var purchaseManager = UIApplication.shared.delegate as! AppDelegate
     var quantity = 0
     var price : Double = 0.0
     var allItems: [Item] = [
@@ -23,7 +22,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return allItems
     }
 
-        
         struct PurchaseHistoryItem {
             let itemName: String
             let quantity: Int
@@ -31,12 +29,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let totalAmount: Double
         }
 
-    var purchaseHistory: [PurchaseHistoryItem] = []
 
 
     var selectedItemIndex = 0
    
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let purchaseManager = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var itemType: UILabel!
     
@@ -93,9 +90,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 totalAmount: totalPrice
                             )
 
-                
-//                PurchaseHistoryItem.append(purchase)
-
+               
                 quantity = 0
                 Quantity.text = "\(quantity)"
                 total.text = String(format: "%.2f", totalPrice)

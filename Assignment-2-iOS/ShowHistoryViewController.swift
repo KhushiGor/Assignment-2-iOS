@@ -1,5 +1,5 @@
 //
-//  RestockViewController.swift
+//  ShowHistoryViewController.swift
 //  Assignment-2-iOS
 //
 //  Created by Khushi Mineshkumar Gor on 2024-10-17.
@@ -7,15 +7,14 @@
 
 import UIKit
 
-class RestockViewController: UIViewController {
+class ShowHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        restockTable.delegate = self
-//        restockTable.dataSource = self
 
         // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation

@@ -256,7 +256,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="History"/>
                                 <connections>
-                                    <action selector="HistoryButton:" destination="EjV-IV-JaV" eventType="touchUpInside" id="T9n-Oq-Vps"/>
+                                    <action selector="HistoryButton:" destination="EjV-IV-JaV" eventType="touchUpInside" id="Bif-2E-uVA"/>
                                     <segue destination="y5G-S3-d45" kind="show" identifier="showHistory" id="fbP-E1-afq"/>
                                 </connections>
                             </button>
@@ -298,9 +298,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Restock"/>
-                                <connections>
-                                    <action selector="restockButton:" destination="mSs-ra-QNO" eventType="touchUpInside" id="gbg-B8-iTB"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBU-zR-Yvg">
                                 <rect key="frame" x="208" y="297" width="77" height="35"/>
@@ -344,9 +341,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z4g-Bo-si2"/>
-                    <connections>
-                        <outlet property="restockTextField" destination="Ed3-SA-Khi" id="PLh-FW-9Lc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyH-IN-2VS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,7 +355,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistorCell" id="oft-Nw-2Jp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="oft-Nw-2Jp">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oft-Nw-2Jp" id="mFa-oA-RdY">
@@ -369,7 +363,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Mex-Rg-vUU" kind="show" id="e85-20-ECp"/>
+                                    <segue destination="Mex-Rg-vUU" kind="show" id="DrI-sg-vUT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -387,7 +381,7 @@
         <!--Name-->
         <scene sceneID="JR0-y9-ERG">
             <objects>
-                <viewController id="Mex-Rg-vUU" sceneMemberID="viewController">
+                <viewController id="Mex-Rg-vUU" customClass="ShowHistoryViewController" customModule="Assignment_2_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LTj-Y5-K38">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

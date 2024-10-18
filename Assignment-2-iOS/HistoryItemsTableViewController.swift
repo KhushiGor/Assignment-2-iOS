@@ -9,9 +9,8 @@ import UIKit
 
 class HistoryItemsTableViewController: UITableViewController {
 
-    var purchaseManager = UIApplication.shared.delegate as! AppDelegate
     var purchaseHistory: [ViewController.PurchaseHistoryItem] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
@@ -31,7 +30,6 @@ class HistoryItemsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
