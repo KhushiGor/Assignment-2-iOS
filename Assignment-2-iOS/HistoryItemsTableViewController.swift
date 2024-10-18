@@ -51,6 +51,18 @@ class HistoryItemsTableViewController: UITableViewController {
             
             return cell
         }
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let product = items[indexPath.row]
+//        quantity = 0
+//        price = product.price
+//        selectedItemIndex = indexPath.row
+//        itemType.text = "\(product.name)"
+//        Quantity.text = ""
+//        total.text = ""
+
+        // Perform the segue to the details page
+        performSegue(withIdentifier: "showHistoryDetails", sender: self)
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

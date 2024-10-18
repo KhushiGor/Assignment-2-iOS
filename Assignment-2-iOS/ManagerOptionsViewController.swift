@@ -21,12 +21,10 @@ class ManagerOptionsViewController: UIViewController {
                 historyVC.purchaseHistory = appDelegate.purchaseHistory
             }
         }
-
+   
     
-    @IBAction func HistoryButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "showHistory", sender: self)
-    }
-    
+//
+//    
     
     
     /*

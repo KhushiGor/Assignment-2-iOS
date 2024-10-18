@@ -256,8 +256,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="History"/>
                                 <connections>
-                                    <action selector="HistoryButton:" destination="EjV-IV-JaV" eventType="touchUpInside" id="Bif-2E-uVA"/>
-                                    <segue destination="y5G-S3-d45" kind="show" identifier="showHistory" id="fbP-E1-afq"/>
+                                    <segue destination="y5G-S3-d45" kind="show" id="hw8-bG-w5d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myx-6u-6sN">
@@ -363,7 +362,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Mex-Rg-vUU" kind="show" id="DrI-sg-vUT"/>
+                                    <segue destination="Mex-Rg-vUU" kind="show" identifier="showHistoryDetails" id="DrI-sg-vUT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -378,7 +377,7 @@
             </objects>
             <point key="canvasLocation" x="1995" y="-20"/>
         </scene>
-        <!--Name-->
+        <!--Show History View Controller-->
         <scene sceneID="JR0-y9-ERG">
             <objects>
                 <viewController id="Mex-Rg-vUU" customClass="ShowHistoryViewController" customModule="Assignment_2_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,7 +387,7 @@
                         <viewLayoutGuide key="safeArea" id="TcC-3V-xCk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Name" id="jbs-21-tdC"/>
+                    <navigationItem key="navigationItem" id="jbs-21-tdC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="01m-Gl-fy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
